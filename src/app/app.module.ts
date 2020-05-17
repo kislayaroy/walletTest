@@ -1,31 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { DistributorDetailsComponent } from './distributor-details/distributor-details.component';
-import { TrackOrderComponent } from './track-order/track-order.component';
-import { UpdateOrderComponent } from './update-order/update-order.component';
 import { HttpClientModule} from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-
+import { AddUserComponent } from './add-user/add-user.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DistributorDetailsComponent,
-    TrackOrderComponent,
-    UpdateOrderComponent,
     HomeComponent,
-    ProductDetailsComponent,
-    
+    UserLoginComponent,
+    AddUserComponent,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRouting,
     FormsModule,
     HttpClientModule 
   ],

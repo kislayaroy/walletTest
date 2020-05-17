@@ -1,19 +1,6 @@
 export class errorDto
 {
-
-
-      timeStamp:Date;
-	  message:String;
-	  errormsg:String;
-
-
-
-
-
-
-
-
-
-
-
+      timeStamp: Date;
+	message: string;
+	errormsg: string;
 }
